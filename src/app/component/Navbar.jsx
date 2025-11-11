@@ -32,7 +32,7 @@ function Navbar() {
     <>
       <Link href="/"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600 '>Home</li> </Link>
       <Link href="/pages/projects"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Projects</li></Link>
-      <Link href="#"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Services</li></Link>
+      <Link href="/pages/skills"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Skills</li></Link>
       <Link href="#"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Contact</li></Link>
       <Link href="/pages/about"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>About</li></Link>
     </>
@@ -50,7 +50,7 @@ function Navbar() {
       <nav className=" absolute top-0 right-0 md:hidden">
         <button onClick={toggleTheme} className='absolute top-0 right-10 text-2xl cursor-pointer text-primary p-2 rounded-md hover:bg-gray-100 transition-all duration-300 flex items-end justify-end' >{isDark ? <Sun className='text-amber-200 text-shadow-amber-100' /> : <Moon />}</button>
         <div className="dropdown ">
-          <div onClick={() => setIsOpen(!isOpen)} className='absolute top-0 right-0 text-2xl cursor-pointer text-primary p-2 rounded-md  transition-all duration-300 flex items-end justify-end' >{isOpen ? <X /> : <Menu />}</div>
+          <div onClick={() => setIsOpen(!isOpen)} className='absolute top-0 right-2 text-2xl cursor-pointer text-primary p-2 rounded-md  transition-all duration-300 flex items-end justify-end' >{isOpen ? <X /> : <Menu />}</div>
           <ul className={`bg-transparent rounded-box z-1 mt-10 w-52 p-4 space-y-2
     absolute right-0 transition-transform duration-500 ease-out 
     ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'} 
