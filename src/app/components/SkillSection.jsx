@@ -14,7 +14,7 @@ const skills = skillsLogo;
 
 function SkillSection() {
   return (
-    <div className='w-[90%] bnpmg-foreground/30 p-10 border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
+    <div className='w-[90%] p-10 border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
       <h2 className='text-4xl mb-2'>My Skills</h2>
       <div className="flex gap-4 overflow-hidden">
         <MotionWrapper className='flex min-w-[200%]' type='infinityCarousel'>

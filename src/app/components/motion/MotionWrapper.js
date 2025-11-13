@@ -16,13 +16,13 @@ const animations = {
     infinityCarousel
 };
 
-export const MotionWrapper = ({type = "fadeIn", delay =0, children,className="", once= true}) => {
+export const MotionWrapper = ({type = "fadeIn", delay=0, children,className="", once= true}) => {
     const variant = animations[type] || fadeIn; 
     return ( 
         <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: once }}
+        viewport={{ once: once, amount: 0.4 }}
         variants={variant}
         transition={{ delay: delay }}
         className={className}
