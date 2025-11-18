@@ -16,18 +16,23 @@ const animations = {
     infinityCarousel
 };
 
-export const MotionWrapper = ({type = "fadeIn", delay=0, children,className="", once= true}) => {
-    const variant = animations[type] || fadeIn; 
-    return ( 
+export const MotionWrapper = ({ type = "fadeIn", delay = 0, children, className = "", once = true }) => {
+    const variant = animations[type] || fadeIn;
+    const variantTransition = variant?.visible?.transition || {};
+    return (
         <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: once, amount: 0.4 }}
-        variants={variant}
-        transition={{ delay: delay }}
-        className={className}
-    >
-        {children}  
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: once, amount: 0.3 }}
+            variants={variant}
+            custom={delay}
+            transition={{
+                ...variantTransition,
+                delay: delay
+            }}
+            className={className}
+        >
+            {children}
         </motion.div>
     );
 }

@@ -21,13 +21,14 @@ export const leftColumn = {
         x: -100,
         opacity: 0
     },
-    visible: { 
+    visible: (d) => ({ 
         x: 0, 
         opacity: 1, 
         transition: {
              duration: 0.6,
+             delay: d,
              staggerChildren: 0.2,
              delayChildren: 0.1,
             } 
-        },
+        }),
 };
