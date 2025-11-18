@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website to showcase my projects and skills.",
-        "image": "/images/portfolio.png",
+        "titel": "Portfolio Website",
+        "desc": "A personal portfolio website to showcase my projects and skills.",
+        "src": "/projectImages/doctors.png",
         "link": "https://myportfolio.com"
     },
     {
         "id": 2,
-        "title": "E-commerce Store",
-        "description": "An online store built with React and Node.js.",
-        "image": "/images/ecommerce.png",
+        "titel": "E-commerce Store",
+        "desc": "An online store built with React and Node.js.",
+        "src": "/images/ecommerce.png",
         "link": "https://myecommercestore.com"
     },
     {
         "id": 3,
-        "title": "Blog Platform",
-        "description": "A blogging platform with user authentication and content management.",
-        "image": "/images/blog.png",
+        "titel": "Blog Platform",
+        "desc": "A blogging platform with user authentication and content management.",
+        "src": "/images/blog.png",
         "link": "https://myblogplatform.com"
     },
     {
         "id": 4,
-        "title": "Task Manager App",
-        "description": "A task management application to organize and prioritize tasks.",
-        "image": "/images/taskmanager.png",
+        "titel": "Task Manager App",
+        "desc": "A task management application to organize and prioritize tasks.",
+        "src": "/images/taskmanager.png",
         "link": "https://mytaskmanager.com"
     }
 ]

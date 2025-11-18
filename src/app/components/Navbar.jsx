@@ -47,14 +47,16 @@ function Navbar() {
           <button className='px-4 py-1 rounded-full transition-all border border-primary bg-primary/20 text-primary duration-600 hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40'>Hire Me</button>
         </ul>
       </nav>
+
+      {/* mobaile nav */}
       <nav className=" absolute top-0 right-0 md:hidden">
         <button onClick={toggleTheme} className='absolute top-0 right-10 text-2xl cursor-pointer text-primary p-2 rounded-md hover:bg-gray-100 transition-all duration-300 flex items-end justify-end' >{isDark ? <Sun className='text-amber-200 text-shadow-amber-100' /> : <Moon />}</button>
         <div className="dropdown ">
           <div onClick={() => setIsOpen(!isOpen)} className='absolute top-0 right-2 text-2xl cursor-pointer text-primary p-2 rounded-md  transition-all duration-300 flex items-end justify-end' >{isOpen ? <X /> : <Menu />}</div>
-          <ul className={`bg-transparent rounded-box z-1 mt-10 w-52 p-4 space-y-2
+          <ul className={`backdrop-blur-xl bg-background/60 rounded-md shadow-foreground/20 shadow-lg rounded-box z-1 mt-10 w-52 p-4 space-y-2
     absolute right-0 transition-transform duration-500 ease-out 
-    ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'} 
-    md:hidden block`}>{navItem} <button className='px-4 py-1 rounded-full transition-all border border-primary bg-primary/20 text-primary duration-600 hover:bg-primary hover:text-background'>Hire Me</button>
+    ${isOpen ? 'translate-x-0 opacity-100 ' : 'translate-x-full opacity-0 pointer-events-none'} 
+    md:hidden block`}>{navItem} <button className='px-4 py-1 rounded-full transition-all border border-primary bg-primary/50 text-primary-foreground duration-600 hover:bg-primary hover:text-background'>Hire Me</button>
           </ul>
         </div>
       </nav>
