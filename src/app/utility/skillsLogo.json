@@ -2,116 +2,139 @@
     {
         "id": 1,
         "category": "Frontend",
-        "src": "/assets/html.svg"
+        "src": "/assets/html.svg",
+        "disc": "For structuring web content"
     },
     {
         "id": 2,
         "category": "Frontend",
-        "src": "/assets/css.svg"
+        "src": "/assets/css.svg",
+        "disc": "For styling web pages"
     },
     {
         "id": 3,
         "category": "Frontend",
-        "src": "/assets/javascript.svg"
+        "src": "/assets/javascript.svg",
+        "disc": "For adding interactivity to web pages"
     },
     {
         "id": 4,
         "category": "Frontend",
-        "src": "/assets/react.svg"
+        "src": "/assets/react.svg",
+        "disc": "For building user interfaces"
     },
     {
         "id": 5,
         "category": "Backend",
-        "src": "/assets/nodejs.svg"
+        "src": "/assets/nodejs.svg",
+        "disc": "For server-side development"
     },
     {
         "id": 6,
         "category": "Frontend",
-        "src": "/assets/nextjs.svg"
+        "src": "/assets/nextjs.svg",
+        "disc": "For server-side rendering and static site generation"
     },
     {
         "id": 7,
         "category": "Backend",
-        "src": "/assets/mongodb.svg"
+        "src": "/assets/mongodb.svg",
+        "disc": "For NoSQL database management"
     },
     {
         "id": 8,
         "category": "Tool",
-        "src": "/assets/git.svg"
+        "src": "/assets/git.svg",
+        "disc": "For version control"
     },
     {
         "id": 9,
         "category": "Tool",
-        "src": "/assets/github.svg"
+        "src": "/assets/github.svg",
+        "disc": "For code hosting and collaboration"
     },
     {
         "id": 10,
         "category": "Frontend",
-        "src": "/assets/tailwind.svg"
+        "src": "/assets/tailwind.svg",
+        "disc": "For utility-first CSS framework"
     },
     {
         "id": 11,
         "category": "Tool",
-        "src": "/assets/figma.svg"
+        "src": "/assets/figma.svg",
+        "disc": "For UI/UX design"
     },
     {
         "id": 12,
         "category": "Backend",
-        "src": "/assets/expressjs.svg"
+        "src": "/assets/expressjs.svg",
+        "disc": "For web application framework for Node.js"
     },
     {
         "id": 13,
         "category": "Frontend",
-        "src": "/assets/scss.svg"
+        "src": "/assets/scss.svg",
+        "disc": "For advanced CSS styling"
     },
     {
         "id": 14,
         "category": "Frontend",
-        "src": "/assets/sass.svg"
+        "src": "/assets/sass.svg",
+        "disc": "For CSS pre-processing"
     },
     {
         "id": 15,
         "category": "Tool",
-        "src": "/assets/npm.svg"
+        "src": "/assets/npm.svg",
+        "disc": "For package management"
     },
     {
         "id": 16,
         "category": "Tool",
-        "src": "/assets/yarn.svg"
+        "src": "/assets/yarn.svg",
+        "disc": "For fast, reliable, and secure dependency management"
     },
     {
         "id": 17,
         "category": "Tool",
-        "src": "/assets/vscode.svg"
+        "src": "/assets/vscode.svg",
+        "disc": "For code editing and development"
     },
     {
         "id": 18,
         "category": "Backend",
-        "src": "/assets/mysql.svg"
+        "src": "/assets/mysql.svg",
+        "disc": "For relational database management"
     },
     {
         "id": 19,
         "category": "Tool",
-        "src": "/assets/postman.svg"
+        "src": "/assets/postman.svg",
+        "disc": "For API testing and development"
     },
     {
         "id": 20,
         "category": "Backend",
-        "src": "/assets/firebase.svg"
+        "src": "/assets/firebase.svg",
+        "disc": "For backend-as-a-service and real-time database"
     },
     {
         "id": 21,
         "category": "Tool",
-        "src": "/assets/vercel.svg"
+        "src": "/assets/vercel.svg",
+        "disc": "For frontend deployment and hosting"
     },
     {
         "id": 22,
         "category": "Tool",
-        "src": "/assets/render.svg"
+        "src": "/assets/render.svg",
+        "disc": "For full-stack application hosting"
     },
     {
         "id": 23,
         "category": "Tool",
-        "src": "/assets/vite.svg"
+        "src": "/assets/vite.svg",
+        "disc": "For fast frontend build tool"
     }
 ]
