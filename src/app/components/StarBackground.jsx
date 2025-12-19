@@ -2,15 +2,14 @@
 import { useEffect, useState } from "react"
 
 
+
 export const Star = () => {
     const [stars, setStars] = useState([]);
     const [meteors, setMeteors] = useState([]);
     const [movingStars, setMovingStars] = useState([]);
-    useEffect(() => {
-        generateStars();
-        generatMeteors();
-        generatMovingStars();
-    }, []);
+    const [theme, setTheme] = useState("light");
+    const [loaded, setLoaded] = useState(false);
+    
     const generateStars = () => {
         const numberOfStars = Math.floor((window.innerWidth * window.innerHeight) / 3000);
         const newStars = [];
@@ -61,8 +60,31 @@ export const Star = () => {
         }
         setMovingStars(newMovingStars);
     }
+    
+    useEffect(() => {
+        generateStars();
+        generatMeteors();
+        generatMovingStars();
+    }, []);
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else {
+            const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            setTheme(prefersDark ? "dark" : "light");
+        }
+        setLoaded(true);
+    }, []);
+    if (!loaded) {
+        return null;
+    }
+    
+    console.log("Current theme:", theme);
     return (
-        <div className="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
+        <>
+            {theme === "dark" && 
+                <div className="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
             {stars.map((star) => (
                 <div key={star.id} className="star animate-pulse-subtle" style={{
                     width: star.size + "px",
@@ -95,5 +117,10 @@ export const Star = () => {
                 }} />
             ))}
         </div>
+            }
+            
+        {theme === "light" && 
+            <div className="fixed inset-0 overflow-hidden backdrop-blur-3xl opacity-70 light-bg pointer-events-none z-[-1]"></div>}
+        </>
     )
 }
