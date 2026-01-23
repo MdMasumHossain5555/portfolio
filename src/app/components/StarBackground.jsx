@@ -7,7 +7,7 @@ export const Star = () => {
     const [stars, setStars] = useState([]);
     const [meteors, setMeteors] = useState([]);
     const [movingStars, setMovingStars] = useState([]);
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
     const [loaded, setLoaded] = useState(false);
 
     const generateStars = () => {

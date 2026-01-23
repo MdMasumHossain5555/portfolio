@@ -25,31 +25,31 @@ const projects = [
 
 function ProjectSection() {
   return (
-    <div className='w-[90%] p-2 pb-10 border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
+    <div className='w-[90%] p-2 pb-10 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
       <MotionWrapper type='left' >
         <h2 className='text-3xl md:text-4xl'>My Project</h2>
       </MotionWrapper>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 xl:gap-4 overflow-hidden'>
-          {projects.map((project, index) => (
-            <MotionWrapper delay={index*0.20} key={index} type={"left"}>
-              <ProjectCard
-                key={index}
-                src={project.src}
-                titel={project.titel}
-                desc={project.desc}
-              />
-            </MotionWrapper>
-          ))}
-          <Link href={"/pages/projects"}>
-          <div className="w-70 xl:w-60 h-80 p-2 bg-primary/10 hover:bg-primary/70 hover:shadow hover:shadow-muted-foreground border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm flex flex-col justify-center items-center gap-4">
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 xl:gap-4 overflow-hidden'>
+        {projects.map((project, index) => (
+          <MotionWrapper delay={index * 0.20} key={index} type={"left"}>
+            <ProjectCard
+              key={index}
+              src={project.src}
+              titel={project.titel}
+              desc={project.desc}
+            />
+          </MotionWrapper>
+        ))}
+        <Link href={"/pages/projects"}>
+          <div className="w-70 xl:w-60 h-80 p-2 bg-primary/10 hover:bg-primary/70 hover:shadow hover:shadow-muted-foreground border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm flex flex-col justify-center items-center gap-4">
             <h3 className='text-4xl text-primary-foreground'>See All</h3>
             <MotionWrapper type='leftRightPalse'>
               <ChevronsRight />
             </MotionWrapper>
           </div>
-          </Link>
-        </div>
+        </Link>
+      </div>
     </div>
   )
 }

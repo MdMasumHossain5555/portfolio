@@ -14,9 +14,9 @@ function Navbar() {
     if (theme) {
       const isDarkTheme = theme === 'dark';
       setIsDark(isDarkTheme);
-      if(isDarkTheme){
+      if (isDarkTheme) {
         document.documentElement.classList.add('dark');
-      }else{
+      } else {
         document.documentElement.classList.remove('dark');
       }
     }
@@ -31,10 +31,10 @@ function Navbar() {
   const navItem = (
     <>
       <Link href="/"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600 '>Home</li> </Link>
-      <Link href="/pages/projects"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Projects</li></Link>
-      <Link href="/pages/skills"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Skills</li></Link>
-      <Link href="#"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Contact</li></Link>
-      <Link href="/pages/about"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>About</li></Link>
+      <Link href="/projects"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Projects</li></Link>
+      <Link href="/skills"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Skills</li></Link>
+      <Link href="/contact"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Contact</li></Link>
+      <Link href="/about"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>About</li></Link>
     </>
   );
   return (
