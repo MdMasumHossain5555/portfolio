@@ -49,21 +49,27 @@
     --foreground: #0f1729;
     --card: #ffffff;
     --border: #e1e7ef;
-    --primary: #7969c9;
+    --primary: hsl(187 100% 50%);
     --primary-gradient: linear-gradient(135deg, #3f85f7, #bc51f5);
-    --primary-foreground: #F9FCF8;
+    --primary-foreground: hsl(230 25% 6%);
     --muted-foreground: #94a3b8;
+    --gradient-primary: linear-gradient(135deg, hsl(187 100% 50%), hsl(263 70% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(263 70% 58%), hsl(330 80% 60%));
+    --gradient-glow: linear-gradient(135deg, hsl(187 100% 50% / 0.2), hsl(263 70% 58% / 0.2));
   }
 
   .dark {
     --background: #05080f;
     --foreground: #e1e7ef;
     --card: #0b111e;
-    --primary: #7f6ce0;
+    --primary: hsl(187 100% 50%);
     --primary-foreground: #e3efe1;
     --border: #222f44;
     --muted-foreground: #64748b;
     --primary-gradient: linear-gradient(135deg, #93c5fd, #c4b5fd);
+    --gradient-primary: linear-gradient(135deg, hsl(187 100% 50%), hsl(263 70% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(263 70% 58%), hsl(330 80% 60%));
+    --gradient-glow: linear-gradient(135deg, hsl(187 100% 50% / 0.2), hsl(263 70% 58% / 0.2));
   }
 }
 
@@ -101,3 +107,55 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn-primary {
+    @apply px-6 py-3 rounded-xl font-semibold text-primary-foreground transition-all duration-300;
+    background: linear-gradient(135deg, hsl(187 100% 50%), hsl(263 70% 58%));
+  }
+
+  .btn-primary:hover {
+    @apply scale-105;
+    box-shadow: 0 0 30px hsl(187 100% 50% / 0.5);
+  }
+
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 rounded-2xl;
+    box-shadow: 0 8px 32px hsl(0 0% 0% / 0.3);
+  }
+  .glass-card:hover {
+    box-shadow: 0 12px 48px hsl(0 0% 0% / 0.5);
+  }
+  .glass-card-hover {
+    @apply transition-all duration-300;
+  }
+  .glass-card-hover:hover {
+    @apply border-white/20 scale-[1.02];
+    box-shadow: 0 12px 40px hsl(187 100% 50% / 0.15);
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 rounded-xl font-semibold border-2 border-primary text-primary transition-all duration-300 bg-transparent;
+  }
+
+  .btn-outline:hover {
+    @apply bg-primary/10 scale-105;
+    box-shadow: 0 0 20px hsl(187 100% 50% / 0.3);
+  }
+
+   .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(187 100% 50%), hsl(263 70% 58%));
+  }
+
+  .gradient-text-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(263 70% 58%), hsl(330 80% 60%));
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 20px hsl(187 100% 50% / 0.4), 0 0 40px hsl(187 100% 50% / 0.2);
+  }
+
+  .neon-glow-purple {
+    box-shadow: 0 0 20px hsl(263 70% 58% / 0.4), 0 0 40px hsl(263 70% 58% / 0.2);
+  }

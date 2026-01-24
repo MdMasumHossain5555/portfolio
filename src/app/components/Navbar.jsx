@@ -40,11 +40,11 @@ function Navbar() {
   return (
     <div className='fixed top-0 left-0 w-[99%] py-2 bg-background/80 backdrop-blur-sm z-50'>
       <nav className=' justify-between items-center flex'>
-        <h1 className='text-2xl font-bold ml-1 cursor-pointer transition-all duration-300 bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 to-purple-600' >Masum Hossain</h1>
+        <h1 className='text-2xl font-bold ml-1 cursor-pointer transition-all duration-300 gradient-text' >Masum Hossain</h1>
         <ul className='hidden md:flex items-center'>
           {navItem}
           <button onClick={toggleTheme} className='text-2xl cursor-pointer text-primary p-2 rounded-md hover:bg-gray-100 transition-all duration-300 flex items-end justify-end' >{isDark ? <Sun className='text-amber-200 text-shadow-amber-100' /> : <Moon />}</button>
-          <button className='px-4 py-1 rounded-full transition-all border border-primary bg-primary/20 text-primary duration-600 hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40'>Hire Me</button>
+          <button className='btn-primary ml-3'>Hire Me</button>
         </ul>
       </nav>
 
@@ -56,7 +56,7 @@ function Navbar() {
           <ul className={`backdrop-blur-xl bg-background/60 rounded-md shadow-foreground/20 shadow-lg rounded-box z-1 mt-10 w-52 p-4 space-y-2
     absolute right-0 transition-transform duration-500 ease-out 
     ${isOpen ? 'translate-x-0 opacity-100 ' : 'translate-x-full opacity-0 pointer-events-none'} 
-    md:hidden block`}>{navItem} <button className='px-4 py-1 rounded-full transition-all border border-primary bg-primary/50 text-primary-foreground duration-600 hover:bg-primary hover:text-background'>Hire Me</button>
+    md:hidden block`}>{navItem} <button className='btn-outline'>Hire Me</button>
           </ul>
         </div>
       </nav>
