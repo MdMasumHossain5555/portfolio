@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 import StaggeredItem from './motion/StaggeredItem';
 function Hero() {
   return (
-    <div className='w-[90%]  p-10 overflow-hidden rounded-md text-center mx-auto mt-20'>
+    <div className='w-[90%]  p-10 overflow-hidden rounded-md text-center mx-auto'>
       <div className="grid grid-cols-1 md:grid-cols-2 content-around items-center gap-10">
         <MotionWrapper className='flex flex-col content-center items-center text-center ' type="left">
           <StaggeredItem type={"left"}>

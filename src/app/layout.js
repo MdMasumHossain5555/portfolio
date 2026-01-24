@@ -34,7 +34,9 @@ export default function RootLayout({ children }) {
         <Navbar />
           <Star />
         <PageMotion>
-        {children}
+          <main className="min-h-screen pt-20 pb-10">
+            {children}
+          </main>
         </PageMotion>
         <Footer />
       </body>
