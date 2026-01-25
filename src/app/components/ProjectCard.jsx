@@ -6,8 +6,8 @@ import Link from 'next/link';
 function ProjectCard({ src, titel, desc, link }) {
   return (
     <Link href={link || "#"}>
-      <div className="glass-card glass-card-hover w-lg h-100 p-10 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm flex flex-col items-center gap-4">
-        <Image width={500} height={300} src={src} alt={titel} className="max-w-full h-auto" />
+      <div className="glass-card glass-card-hover w-[98%] md:w-lg h-100 p-10 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm flex flex-col items-center gap-4">
+        <Image width={500} height={300} src={src} alt={titel} className="max-w-full h-25 md:h-50" />
         <h3 className="text-2xl text-foreground">{titel}</h3>
         <p className="text-muted-foreground">{desc}</p>
         <div className='glass-card glass-card-hover cursor-pointer opacity-0 bg-primary/40 backdrop-blur-md w-full h-full rounded-md absolute top-0 flex flex-col justify-center items-center left-0 hover:opacity-100'>
@@ -26,7 +26,7 @@ export const Card = ({ src, titel, desc, link }) => {
   return (
     <Link href={link || "#"}>
       <div className="glass-card glass-card-hover w-70 h-80 p-2 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm flex flex-col items-center gap-4">
-        <Image width={300} height={100} src={src} alt={titel} className="max-w-full h-auto" />
+        <Image width={300} height={100} src={src} alt={titel} />
         <h3 className="text-2xl text-foreground">{titel}</h3>
         <p className="text-muted-foreground">{desc}</p>
         <div className='glass-card glass-card-hover cursor-pointer opacity-0 bg-primary/60 backdrop-blur-md w-full h-full rounded-md absolute top-0 flex flex-col justify-center items-center left-0 hover:opacity-100'>

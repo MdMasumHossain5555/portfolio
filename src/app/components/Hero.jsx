@@ -6,14 +6,14 @@ import { MdEmail } from "react-icons/md";
 import StaggeredItem from './motion/StaggeredItem';
 function Hero() {
   return (
-    <div className='w-[90%]  p-10 overflow-hidden rounded-md text-center mx-auto'>
+    <div className='w-[95%]  p-10 overflow-hidden rounded-md text-center mx-auto'>
       <div className="grid grid-cols-1 md:grid-cols-2 content-around items-center gap-10">
         <MotionWrapper className='flex flex-col content-center items-center text-center ' type="left">
           <StaggeredItem type={"left"}>
-            <img src="/hero.png" alt="Hero Image" className='w-50 h-50 rounded-full shadow-lg w-52 h-52 rounded-full shadow-lg block mx-auto' />
+            <img src="/masum.png" alt="Hero Image" className='w-70 h-70 rounded-full shadow-lg rounded-full shadow-lg block mx-auto' />
           </StaggeredItem>
           <StaggeredItem type={"left"}>
-            <h2 className='text-3xl'><span className='gradient-text'>Masum</span> Hossain</h2>
+            <h2 className='text-4xl'><span className='gradient-text'>Masum</span> Hossain</h2>
             <p>Full Stake developer.</p>
           </StaggeredItem>
           <StaggeredItem className='flex gap-4 mt-2' type={"left"} >
@@ -29,14 +29,14 @@ function Hero() {
               <p className='mb-15'>Hello There!</p>
             </StaggeredItem>
             <StaggeredItem type={"right"}>
-              <h1 className='text-4xl font-bold mb-4 gradient-text'>I am Masum Hossain,</h1>
+              <h1 className='text-5xl font-bold mb-6 gradient-text'>I am Masum Hossain,</h1>
             </StaggeredItem>
             <StaggeredItem type={"right"}>
               <p className='text-lg text-secondary mb-6'> a passionate developer specializing in creating beautiful and functional web applications. Explore my projects and services to see how I can help bring your ideas to life.</p>
             </StaggeredItem>
             <StaggeredItem type={"right"}>
               <div className='flex flex-col md:flex-row gap-4 content-around items-center'>
-                <button className='btn-primary cursor-pointer items-center'>Get in Touch</button>
+                <a href="/contact"><button className='btn-primary cursor-pointer items-center'>Get in Touch</button></a>
                 <button className='btn-outline cursor-pointer flex items-center'>Download CV <MotionWrapper type='upDownPalse'><Download /></MotionWrapper> </button>
               </div>
             </StaggeredItem>

@@ -102,7 +102,6 @@ export const Star = () => {
         return null;
     }
 
-    console.log("Current theme:", theme);
     return (
         <>
             {theme === "dark" &&

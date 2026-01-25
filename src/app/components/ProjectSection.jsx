@@ -26,7 +26,7 @@ const projects = [
 
 function ProjectSection() {
   return (
-    <div className='w-[90%] p-2 pb-10 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
+    <div className='w-[95%] p-3 md:p-7 pb-10 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
       <MotionWrapper type='left' >
         <h2 className='text-primary text-3xl md:text-4xl'>My Project</h2>
       </MotionWrapper>

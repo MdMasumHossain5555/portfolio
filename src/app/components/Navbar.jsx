@@ -2,11 +2,13 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { Menu, Moon, Sun, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+  const pathname = usePathname();
+   const isActive = (path) => pathname === path;
 
 
   useEffect(() => {
@@ -30,11 +32,11 @@ function Navbar() {
 
   const navItem = (
     <>
-      <Link href="/"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600 '>Home</li> </Link>
-      <Link href="/projects"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Projects</li></Link>
-      <Link href="/skills"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Skills</li></Link>
-      <Link href="/contact"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>Contact</li></Link>
-      <Link href="/about"><li className='hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600'>About</li></Link>
+      <Link href="/"><li className={`${isActive('/') ? 'bg-primary/20 rounded-full py-1 px-2 shadow-primary/40 border-primary text-primary' : ''} hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600 `}>Home</li></Link>
+      <Link href="/projects"><li className={`${isActive('/projects') ? 'bg-primary/20 rounded-full py-1 px-2 shadow-primary/40 border-primary text-primary' : ''} hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600`}>Projects</li></Link>
+      <Link href="/skills"><li className={`${isActive('/skills') ? 'bg-primary/20 rounded-full py-1 px-2 shadow-primary/40 border-primary text-primary' : ''} hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600`}>Skills</li></Link>
+      <Link href="/contact"><li className={`${isActive('/contact') ? 'bg-primary/20 rounded-full py-1 px-2 shadow-primary/40 border-primary text-primary' : ''} hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow-primary/40 hover:border-primary hover:text-primary px-2 py-1 mx-4 font-bold cursor-pointer transition-all duration-600`}>Contact</li></Link>
+      <Link href="/about"><li className={`${isActive('/about') ? 'bg-primary/20 rounded-full py-1 px-2 shadow-primary/40 border-primary text-primary' : ''} hover:bg-primary/20 hover:rounded-full hover:py-1 hover:px-2 hover:shadow_primary/40hover:border_primaryhover:text_primary px - 2 py - 1 mx - 4 font - bold cursor - pointer transition - all duration - 600`}>About</li></Link>
     </>
   );
   return (
@@ -44,7 +46,7 @@ function Navbar() {
         <ul className='hidden md:flex items-center'>
           {navItem}
           <button onClick={toggleTheme} className='text-2xl cursor-pointer text-primary p-2 rounded-md hover:bg-gray-100 transition-all duration-300 flex items-end justify-end' >{isDark ? <Sun className='text-amber-200 text-shadow-amber-100' /> : <Moon />}</button>
-          <button className='btn-primary ml-3'>Hire Me</button>
+          <a href="/contact"><button className='btn-primary ml-3'>Hire Me</button></a>
         </ul>
       </nav>
 
@@ -56,7 +58,7 @@ function Navbar() {
           <ul className={`backdrop-blur-xl bg-background/60 rounded-md shadow-foreground/20 shadow-lg rounded-box z-1 mt-10 w-52 p-4 space-y-2
     absolute right-0 transition-transform duration-500 ease-out 
     ${isOpen ? 'translate-x-0 opacity-100 ' : 'translate-x-full opacity-0 pointer-events-none'} 
-    md:hidden block`}>{navItem} <button className='btn-outline'>Hire Me</button>
+    md:hidden block`}>{navItem} <a href="/contact"><button className='btn-outline'>Hire Me</button></a>
           </ul>
         </div>
       </nav>
