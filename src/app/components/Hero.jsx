@@ -4,13 +4,30 @@ import { Download } from 'lucide-react'
 import { FaLinkedin, FaGithubSquare, FaFacebookSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import StaggeredItem from './motion/StaggeredItem';
+import HackerCircle from './HackerCircle';
 function Hero() {
   return (
     <div className='w-[95%]  p-10 overflow-hidden rounded-md text-center mx-auto'>
       <div className="grid grid-cols-1 md:grid-cols-2 content-around items-center gap-10">
         <MotionWrapper className='flex flex-col content-center items-center text-center ' type="left">
+
+
+          {/* <div className='relative w-70 h-70 mx-auto'>
+          <MotionWrapper type="rotateClockwise">
+            <div className='absolute inset-0 border-2 border-dashed border-primary rounded-full'>
+            </div>
+          </MotionWrapper>
+          <MotionWrapper type="rotateAntiClockwise">
+            <div className='absolute inset-0 border-2 border-dashed border-primary rounded-full'>
+            </div>
+          </MotionWrapper>
           <StaggeredItem type={"left"}>
             <img src="/masum.png" alt="Hero Image" className='w-70 h-70 rounded-full shadow-lg rounded-full shadow-lg block mx-auto' />
+          </StaggeredItem>
+          </div> */}
+
+          <StaggeredItem type={"left"}>
+            <HackerCircle />
           </StaggeredItem>
           <StaggeredItem type={"left"}>
             <h2 className='text-4xl'><span className='gradient-text'>Masum</span> Hossain</h2>
@@ -35,7 +52,7 @@ function Hero() {
               <p className='text-lg text-secondary mb-6'> a passionate developer specializing in creating beautiful and functional web applications. Explore my projects and services to see how I can help bring your ideas to life.</p>
             </StaggeredItem>
             <StaggeredItem type={"right"}>
-              <div className='flex flex-col md:flex-row gap-4 content-around items-center'>
+              <div className='flex flex-col mt-15 md:flex-row gap-4 content-around items-center'>
                 <a href="/contact"><button className='btn-primary cursor-pointer items-center'>Get in Touch</button></a>
                 <button className='btn-outline cursor-pointer flex items-center'>Download CV <MotionWrapper type='upDownPalse'><Download /></MotionWrapper> </button>
               </div>

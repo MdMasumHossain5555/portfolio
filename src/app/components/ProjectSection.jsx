@@ -39,6 +39,10 @@ function ProjectSection() {
               src={project.src}
               titel={project.titel}
               desc={project.desc}
+              link={project.link}
+              githubLink={project.githubLink}
+              liveLink={project.liveLink}
+              category={project.category}
             />
           </MotionWrapper>
         ))}

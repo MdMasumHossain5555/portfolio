@@ -6,6 +6,7 @@ import { upDownPalse } from "./variants/upDownPalse";
 import { leftRightPalse } from "./variants/leftRightPalse";
 import { infinityCarousel } from "./variants/infinityCarousel";
 import { bottomVariant } from "./variants/bottom";
+import { rotateClockwise, rotateAntiClockwise } from "./variants/roundMotion";
 
 
 const animations = {
@@ -15,7 +16,9 @@ const animations = {
     upDownPalse,
     leftRightPalse,
     infinityCarousel, 
-    bottom: bottomVariant
+    bottom: bottomVariant,
+    rotateClockwise,
+    rotateAntiClockwise,
 };
 
 export const MotionWrapper = ({ type = "fadeIn", delay = 0, children, className = "", once = true }) => {

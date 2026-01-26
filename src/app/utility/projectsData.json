@@ -4,6 +4,8 @@
         "titel": "Portfolio Website",
         "desc": "A personal portfolio website to showcase my projects and professional skills, highlighting experience and accomplishments.",
         "src": "/projectImages/doctors.png",
+        "category": "Frontend",
+        "tags": ["React", "Tailwind CSS", "Framer Motion"],
         "frontend": "https://github.com/username/portfolio-frontend",
         "backend": "https://github.com/username/portfolio-backend",
         "liveView": "https://myportfolio.com"
@@ -13,6 +15,8 @@
         "titel": "E-commerce Store",
         "desc": "An online shop built with React and Node.js.",
         "src": "/projectImages/ecommerce.png",
+        "category": "Full Stack",
+        "tags": ["React", "Node.js", "Express.js", "MongoDB", "Stripe"],
         "frontend": "https://github.com/username/ecommerce-frontend",
         "backend": "https://github.com/username/ecommerce-backend",
         "liveView": "https://myecommercestore.com"
@@ -22,6 +26,8 @@
         "titel": "Blog Platform",
         "desc": "A blogging platform that allows users to register, create, and manage their posts easily.",
         "src": "/projectImages/blog.png",
+        "category": "Full Stack",
+        "tags": ["Next.js", "Node.js", "Express.js", "MongoDB", "JWT"],
         "frontend": "https://github.com/username/blog-frontend",
         "backend": "https://github.com/username/blog-backend",
         "liveView": "https://myblogplatform.com"
@@ -31,6 +37,8 @@
         "titel": "Task Manager App",
         "desc": "Manage tasks efficiently.",
         "src": "/projectImages/taskmanager.png",
+        "category": "Full Stack",
+        "tags": ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
         "frontend": "https://github.com/username/taskmanager-frontend",
         "backend": "https://github.com/username/taskmanager-backend",
         "liveView": "https://mytaskmanager.com"
@@ -40,6 +48,8 @@
         "titel": "Weather App",
         "desc": "Get real-time weather updates with accurate forecasts for any city in the world.",
         "src": "/projectImages/weather.png",
+        "category": "Frontend",
+        "tags": ["React", "API", "OpenWeather", "Tailwind CSS"],
         "frontend": "https://github.com/username/weather-frontend",
         "backend": "https://github.com/username/weather-backend",
         "liveView": "https://myweatherapp.com"
@@ -49,6 +59,8 @@
         "titel": "Chat Application",
         "desc": "A simple chat app for instant messaging.",
         "src": "/projectImages/chat.png",
+        "category": "Full Stack",
+        "tags": ["React", "Node.js", "Socket.io", "Express.js", "MongoDB"],
         "frontend": "https://github.com/username/chat-frontend",
         "backend": "https://github.com/username/chat-backend",
         "liveView": "https://mychatapp.com"
@@ -58,6 +70,8 @@
         "titel": "Learning Management System",
         "desc": "A complete online platform for managing courses, students, and learning materials efficiently.",
         "src": "/projectImages/lms.png",
+        "category": "Full Stack",
+        "tags": ["Next.js", "Node.js", "Express.js", "MongoDB", "JWT", "Stripe"],
         "frontend": "https://github.com/username/lms-frontend",
         "backend": "https://github.com/username/lms-backend",
         "liveView": "https://mylmsplatform.com"
