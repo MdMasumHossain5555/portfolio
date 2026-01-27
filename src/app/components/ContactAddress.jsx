@@ -6,15 +6,15 @@ function ContactAddress() {
   {
     icon: Mail,
     label: 'Email',
-    value: 'masum.hossain@email.com',
-    href: 'mailto:masum.hossain@email.com',
+    value: 'mdmasumhossain1712@gmail.com',
+    href: 'mailto:mdmasumhossain1712@gmail.com',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+880 1234-567890',
-    href: 'tel:+8801234567890',
+    value: '+880 1772423200',
+    href: 'tel:+8801772423200',
     gradient: 'from-purple-500 to-pink-500',
   },
   {
@@ -36,7 +36,7 @@ function ContactAddress() {
             <div>
               <p className="font-semibold">{info.label}</p>
               <a href={info.href} className="text-sm hover:underline">
-                {info.value}``
+                {info.value}
               </a>
             </div>
           </div>

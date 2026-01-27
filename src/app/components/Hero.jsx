@@ -54,7 +54,7 @@ function Hero() {
             <StaggeredItem type={"right"}>
               <div className='flex flex-col mt-15 md:flex-row gap-4 content-around items-center'>
                 <a href="/contact"><button className='btn-primary cursor-pointer items-center'>Get in Touch</button></a>
-                <button className='btn-outline cursor-pointer flex items-center'>Download CV <MotionWrapper type='upDownPalse'><Download /></MotionWrapper> </button>
+                <a href="/Resume of Web Developer-Masum.pdf" download><button className='btn-outline cursor-pointer flex items-center'>Download CV <MotionWrapper type='upDownPalse'><Download /></MotionWrapper> </button></a>
               </div>
             </StaggeredItem>
           </div>

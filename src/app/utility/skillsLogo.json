@@ -1,138 +1,184 @@
 [
     {
         "id": 1,
+        "name": "HTML",
+        "percent": 90,
         "category": "Frontend",
         "src": "/assets/html.svg",
         "disc": "For structuring web content"
     },
     {
         "id": 2,
+        "name": "CSS",
+        "percent": 85,
         "category": "Frontend",
         "src": "/assets/css.svg",
         "disc": "For styling web pages"
     },
     {
         "id": 3,
+        "name": "JavaScript",
+        "percent": 80,
         "category": "Frontend",
         "src": "/assets/javascript.svg",
         "disc": "For adding interactivity to web pages"
     },
     {
         "id": 4,
+        "name": "React",
+        "percent": 75,
         "category": "Frontend",
         "src": "/assets/react.svg",
         "disc": "For building user interfaces"
     },
     {
         "id": 5,
+        "name": "Node.js",
+        "percent": 70,
         "category": "Backend",
         "src": "/assets/nodejs.svg",
         "disc": "For server-side development"
     },
     {
         "id": 6,
+        "name": "Next.js",
+        "percent": 80,
         "category": "Frontend",
         "src": "/assets/nextjs.svg",
         "disc": "For server-side rendering and static site generation"
     },
     {
         "id": 7,
+        "name": "MongoDB",
+        "percent": 70,
         "category": "Backend",
         "src": "/assets/mongodb.svg",
         "disc": "For NoSQL database management"
     },
     {
         "id": 8,
+        "name": "Git",
+        "percent": 85,
         "category": "Tool",
         "src": "/assets/git.svg",
         "disc": "For version control"
     },
     {
         "id": 9,
+        "name": "GitHub",
+        "percent": 85,
         "category": "Tool",
         "src": "/assets/github.svg",
         "disc": "For code hosting and collaboration"
     },
     {
         "id": 10,
+        "name": "Tailwind CSS",
+        "percent": 80,
         "category": "Frontend",
         "src": "/assets/tailwind.svg",
         "disc": "For utility-first CSS framework"
     },
     {
         "id": 11,
+        "name": "Figma",
+        "percent": 70,
         "category": "Tool",
         "src": "/assets/figma.svg",
         "disc": "For UI/UX design"
     },
     {
         "id": 12,
+        "name": "Express.js",
+        "percent": 70,
         "category": "Backend",
         "src": "/assets/expressjs.svg",
         "disc": "For web application framework for Node.js"
     },
     {
         "id": 13,
+        "name": "SCSS",
+        "percent": 75,
         "category": "Frontend",
         "src": "/assets/scss.svg",
         "disc": "For advanced CSS styling"
     },
     {
         "id": 14,
+        "name": "Sass",
+        "percent": 75,
         "category": "Frontend",
         "src": "/assets/sass.svg",
         "disc": "For CSS pre-processing"
     },
     {
         "id": 15,
+        "name": "NPM",
+        "percent": 80,
         "category": "Tool",
         "src": "/assets/npm.svg",
         "disc": "For package management"
     },
     {
         "id": 16,
+        "name": "Yarn",
+        "percent": 70,
         "category": "Tool",
         "src": "/assets/yarn.svg",
         "disc": "For fast, reliable, and secure dependency management"
     },
     {
         "id": 17,
+        "name": "VS Code",
+        "percent": 90,
         "category": "Tool",
         "src": "/assets/vscode.svg",
         "disc": "For code editing and development"
     },
     {
         "id": 18,
+        "name": "MySQL",
+        "percent": 65,
         "category": "Backend",
         "src": "/assets/mysql.svg",
         "disc": "For relational database management"
     },
     {
         "id": 19,
+        "name": "Postman",
+        "percent": 75,
         "category": "Tool",
         "src": "/assets/postman.svg",
         "disc": "For API testing and development"
     },
     {
         "id": 20,
+        "name": "Firebase",
+        "percent": 70,
         "category": "Backend",
         "src": "/assets/firebase.svg",
         "disc": "For backend-as-a-service and real-time database"
     },
     {
         "id": 21,
+        "name": "Vercel",
+        "percent": 75,
         "category": "Tool",
         "src": "/assets/vercel.svg",
         "disc": "For frontend deployment and hosting"
     },
     {
         "id": 22,
+        "name": "Render",
+        "percent": 70,
         "category": "Tool",
         "src": "/assets/render.svg",
         "disc": "For full-stack application hosting"
     },
     {
         "id": 23,
+        "name": "Vite",
+        "percent": 80,
         "category": "Tool",
         "src": "/assets/vite.svg",
         "disc": "For fast frontend build tool"

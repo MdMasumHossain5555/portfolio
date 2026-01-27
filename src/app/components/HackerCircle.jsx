@@ -39,10 +39,11 @@ export default function MultiFullCircleFocus() {
             strokeDasharray={dashArrays[i]}
             strokeLinecap="round"
             initial={{ opacity: 0, rotate: 0 }}
-            animate={{
+            whileInView={{
               rotate: rotations[i],
               opacity: [0, 1, 1, 1, 0],
             }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{
               duration: 1.5,
               ease: "easeInOut",
