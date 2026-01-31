@@ -8,7 +8,8 @@
         "tags": ["React", "Tailwind CSS", "Framer Motion"],
         "frontend": "https://github.com/username/portfolio-frontend",
         "backend": "https://github.com/username/portfolio-backend",
-        "liveView": "https://myportfolio.com"
+        "liveView": "https://myportfolio.com",
+        "status": "demo"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "tags": ["React", "Node.js", "Express.js", "MongoDB", "Stripe"],
         "frontend": "https://github.com/username/ecommerce-frontend",
         "backend": "https://github.com/username/ecommerce-backend",
-        "liveView": "https://myecommercestore.com"
+        "liveView": "https://myecommercestore.com",
+        "status": "demo"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "tags": ["Next.js", "Node.js", "Express.js", "MongoDB", "JWT"],
         "frontend": "https://github.com/username/blog-frontend",
         "backend": "https://github.com/username/blog-backend",
-        "liveView": "https://myblogplatform.com"
+        "liveView": "https://myblogplatform.com",
+        "status": "demo"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "tags": ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
         "frontend": "https://github.com/username/taskmanager-frontend",
         "backend": "https://github.com/username/taskmanager-backend",
-        "liveView": "https://mytaskmanager.com"
+        "liveView": "https://mytaskmanager.com",
+        "status": "demo"
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "tags": ["React", "API", "OpenWeather", "Tailwind CSS"],
         "frontend": "https://github.com/username/weather-frontend",
         "backend": "https://github.com/username/weather-backend",
-        "liveView": "https://myweatherapp.com"
+        "liveView": "https://myweatherapp.com",
+        "status": "demo"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "tags": ["React", "Node.js", "Socket.io", "Express.js", "MongoDB"],
         "frontend": "https://github.com/username/chat-frontend",
         "backend": "https://github.com/username/chat-backend",
-        "liveView": "https://mychatapp.com"
+        "liveView": "https://mychatapp.com",
+        "status": "demo"
     },
     {
         "id": 7,
@@ -74,6 +80,7 @@
         "tags": ["Next.js", "Node.js", "Express.js", "MongoDB", "JWT", "Stripe"],
         "frontend": "https://github.com/username/lms-frontend",
         "backend": "https://github.com/username/lms-backend",
-        "liveView": "https://mylmsplatform.com"
+        "liveView": "https://mylmsplatform.com",
+        "status": "demo"
     }
 ]

@@ -43,11 +43,12 @@ function ProjectSection() {
               githubLink={project.githubLink}
               liveLink={project.liveLink}
               category={project.category}
+              status={project.status}
             />
           </MotionWrapper>
         ))}
       </div>
-      <Link href={"/pages/projects"}>
+      <Link href={"/projects"}>
           <div className="btn-outline w-52 mx-auto mt-6 flex items-center justify-center gap-2">
             <h3>See All Projects</h3>
             <MotionWrapper type='leftRightPalse'>

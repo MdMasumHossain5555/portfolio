@@ -1,5 +1,6 @@
 import React from 'react'
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
+import { MotionWrapper } from './motion/MotionWrapper';
 
 function ContactAddress() {
     const contactInfo = [
@@ -29,6 +30,7 @@ function ContactAddress() {
     <div >
       <section className="space-y-5">
         {contactInfo.map((info, index) => (
+          <MotionWrapper key={index} delay={index * 0.2} type='left'>
           <div key={index} className="flex items-center gap-3 p-4 rounded-3xl bg-gradient-to-r from-blue-300 to-cyan-300 text-black neon-glow">
             <div className={`bg-gradient-to-br ${info.gradient} p-3 rounded-full`}>
                 <info.icon className="w-6 h-6" />
@@ -40,8 +42,10 @@ function ContactAddress() {
               </a>
             </div>
           </div>
+          </MotionWrapper>
         ))}
       </section>
+      <MotionWrapper type='left'>
       <section className="mt-5 p-5 item bg-gradient-to-tr from-cyan-200 to-fuchsia-200 border border-border rounded-3xl backdrop-blur-sm neon-glow-purple">
         <h4 className='text-black mb-5 mx-5'>Follow Me</h4>
         <div className="flex gap-8 mx-5">
@@ -59,7 +63,9 @@ function ContactAddress() {
           </a>
         </div>
       </section>
+      </MotionWrapper>
       <section>
+        <MotionWrapper type='left'>
         <div className="mt-5 p-5 item bg-gradient-to-tr from-cyan-200 to-fuchsia-200 border border-border rounded-3xl backdrop-blur-sm neon-glow-purple">
           <div>
             <MapPin className="w-6 h-6 mb-3 text-black" />
@@ -75,6 +81,7 @@ function ContactAddress() {
             ></iframe>
           </div>
         </div>
+        </MotionWrapper>
       </section>
     </div>
   )
