@@ -27,13 +27,13 @@ function SkillSection() {
         </MotionWrapper>
       </div>
       <Link href={"/skills"}>
-          <div className='btn-outline w-50 mx-auto mt-6 flex items-center justify-center gap-2'>
-            <h3>See All Skill</h3>
-            <MotionWrapper type='leftRightPalse'>
-              <ChevronsRight />
-            </MotionWrapper>
-          </div>
-        </Link> 
+        <div className='btn-outline w-50 mx-auto mt-6 flex items-center justify-center gap-2'>
+          <h3>See All Skill</h3>
+          <MotionWrapper type='leftRightPalse'>
+            <ChevronsRight />
+          </MotionWrapper>
+        </div>
+      </Link>
     </div >
   )
 }

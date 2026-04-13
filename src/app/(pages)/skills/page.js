@@ -17,44 +17,44 @@ function Skills() {
       <section className='mb-10'>
         <h2 className='text-2xl font-bold mb-4 flex gap-3'><CodeXml className=" text-cyan-500" /><span className='gradient-text'>Frontend</span> Development</h2>
         <div className='mx-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
-        {frontend.map((skill, index) => (
-          <Skill
-            key={index}
-            src={skill.src}
-            disc={skill.disc}
-            percent={skill.percent}
-            skill={skill.name}
-          />
-        ))}
-      </div> 
+          {frontend.map((skill, index) => (
+            <Skill
+              key={index}
+              src={skill.src}
+              disc={skill.disc}
+              percent={skill.percent}
+              skill={skill.name}
+            />
+          ))}
+        </div>
       </section>
       <section className='mb-10'>
         <h2 className='text-2xl font-bold mb-4 flex gap-3'><Terminal className="text-4xl" /><span className='gradient-text'>Backend</span> Development</h2>
         <div className='mx-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
-        {backend.map((skill, index) => (
-          <Skill
-            key={index}
-            src={skill.src}
-            disc={skill.disc}
-            percent={skill.percent}
-            skill={skill.name}
-          />
-        ))}
-      </div>
+          {backend.map((skill, index) => (
+            <Skill
+              key={index}
+              src={skill.src}
+              disc={skill.disc}
+              percent={skill.percent}
+              skill={skill.name}
+            />
+          ))}
+        </div>
       </section>
       <section className='mb-10'>
         <h2 className='text-2xl font-bold mb-4 flex gap-3'><FaTools className="text-red-500 text-2xl" /><span className='gradient-text'>Tools</span> & Platforms</h2>
         <div className='mx-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
-        {tools.map((skill, index) => (
-          <Skill
-            key={index}
-            src={skill.src}
-            disc={skill.disc}
-            percent={skill.percent}
-            skill={skill.name}
-          />
-        ))}
-      </div>
+          {tools.map((skill, index) => (
+            <Skill
+              key={index}
+              src={skill.src}
+              disc={skill.disc}
+              percent={skill.percent}
+              skill={skill.name}
+            />
+          ))}
+        </div>
       </section>
     </div >
   )

@@ -49,13 +49,13 @@ function ProjectSection() {
         ))}
       </div>
       <Link href={"/projects"}>
-          <div className="btn-outline w-52 mx-auto mt-6 flex items-center justify-center gap-2">
-            <h3>See All Projects</h3>
-            <MotionWrapper type='leftRightPalse'>
-              <ChevronsRight />
-            </MotionWrapper>
-          </div>
-        </Link>
+        <div className="btn-outline w-52 mx-auto mt-6 flex items-center justify-center gap-2">
+          <h3>See All Projects</h3>
+          <MotionWrapper type='leftRightPalse'>
+            <ChevronsRight />
+          </MotionWrapper>
+        </div>
+      </Link>
     </div>
   )
 }
