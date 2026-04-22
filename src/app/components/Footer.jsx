@@ -30,7 +30,7 @@ function Footer() {
           <div>
             <h4 className='text-primary font-semibold mb-2'>Connect</h4>
             <div className='flex items-center gap-2'>
-              <a href='https://github.com/MdMasumHossain5555' target='_blank' rel='noopener noreferrer' className='p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300'>
+              <a href='https://github.com/Md-Masum-Hossain' target='_blank' rel='noopener noreferrer' className='p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300'>
                 <Github className='w-4 h-4' />
               </a>
               <a href='https://www.linkedin.com/in/mdmasumhossain5/' target='_blank' rel='noopener noreferrer' className='p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300'>

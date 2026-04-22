@@ -35,7 +35,7 @@ function Hero() {
           </StaggeredItem>
           <StaggeredItem className='flex gap-4 mt-2' type={"left"} >
             <a href="https://www.linkedin.com/in/mdmasumhossain5/" target='blank'><FaLinkedin className='w-8 h-8 text-primary bg-primary-foreground block mx-auto border-0 rounded-md hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40 cursor-pointer' /></a>
-            <a href="https://github.com/MdMasumHossain5555" target='blank'><FaGithubSquare className='w-8 h-8 text-primary bg-primary-foreground block mx-auto border-0 rounded-md hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40 cursor-pointer' /></a>
+            <a href="https://github.com/Md-Masum-Hossain" target='blank'><FaGithubSquare className='w-8 h-8 text-primary bg-primary-foreground block mx-auto border-0 rounded-md hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40 cursor-pointer' /></a>
             <a href="https://www.facebook.com/mostafijur.rahman.241326" target='blank'><FaFacebookSquare className='w-8 h-8 text-primary bg-primary-foreground block mx-auto border-0 rounded-md hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40 cursor-pointer' /></a>
             <a href="mailto:masumhossain1712@gmail.com" target='blank'><MdEmail className='w-8 h-8 text-primary bg-primary-foreground block mx-auto border-0 rounded-md hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40 cursor-pointer' /></a>
           </StaggeredItem>
