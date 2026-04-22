@@ -28,7 +28,7 @@ function ProjectSection() {
   return (
     <div className='w-[95%] p-3 md:p-7 pb-10 border border-border rounded-md mx-auto mt-10 shadow-foreground/20 shadow-lg backdrop-blur-sm'>
       <MotionWrapper type='left' >
-        <h2 className='text-primary text-3xl md:text-4xl'>My Project</h2>
+        <h2 className='text-primary text-3xl md:text-4xl'>Featured Projects</h2>
       </MotionWrapper>
 
       <div className='grid grid-cols-1 p-5 md:grid-cols-2 gap-3 '>

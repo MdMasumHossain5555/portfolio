@@ -31,7 +31,7 @@ function Hero() {
           </StaggeredItem>
           <StaggeredItem type={"left"}>
             <h2 className='text-4xl'><span className='gradient-text'>Masum</span> Hossain</h2>
-            <p>Full Stake developer.</p>
+            <p>Full-stack developer.</p>
           </StaggeredItem>
           <StaggeredItem className='flex gap-4 mt-2' type={"left"} >
             <a href="https://www.linkedin.com/in/mdmasumhossain5/" target='blank'><FaLinkedin className='w-8 h-8 text-primary bg-primary-foreground block mx-auto border-0 rounded-md hover:bg-primary hover:text-background hover:border-background hover:shadow-primary/40 cursor-pointer' /></a>
@@ -49,7 +49,7 @@ function Hero() {
               <h1 className='text-5xl font-bold mb-6 gradient-text'>I am Masum Hossain,</h1>
             </StaggeredItem>
             <StaggeredItem type={"right"}>
-              <p className='text-lg text-secondary mb-6'> a passionate developer specializing in creating beautiful and functional web applications. Explore my projects and services to see how I can help bring your ideas to life.</p>
+              <p className='text-lg text-secondary mb-6'>I build fast, user-focused web applications with clean code and modern tools. Explore my projects to see how I turn ideas into practical digital products.</p>
             </StaggeredItem>
             <StaggeredItem type={"right"}>
               <div className='flex flex-col mt-15 md:flex-row gap-4 content-around items-center'>
